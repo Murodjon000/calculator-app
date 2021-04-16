@@ -19,6 +19,7 @@ body {
   flex-wrap: wrap;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+<<<<<<< HEAD
 
 .top-btn {
   display: flex;
@@ -86,3 +87,5 @@ button.light-grey {
 button.ac {
   margin-right: 50%;
 }
+=======
+>>>>>>> 105be097dc8649057d27756095ca13cd886acb39
