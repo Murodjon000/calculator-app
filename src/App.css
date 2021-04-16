@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;1,500;1,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;1,500;1,600&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -9,7 +9,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 .calculator {
   background-color: #111;
@@ -19,7 +19,6 @@ body {
   flex-wrap: wrap;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-<<<<<<< HEAD
 
 .top-btn {
   display: flex;
@@ -87,5 +86,3 @@ button.light-grey {
 button.ac {
   margin-right: 50%;
 }
-=======
->>>>>>> 105be097dc8649057d27756095ca13cd886acb39
