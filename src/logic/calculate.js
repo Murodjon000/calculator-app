@@ -1,35 +1,35 @@
 import operate from './operate';
 
-const calculate = (data, btn) => {
+const calculate = (data, btnName) => {
   const newData = { ...data };
   let { total, next, operation } = newData;
 
-  if (btn === 'AC') {
+  if (btnName === 'AC') {
     total = '';
     next = '';
     operation = null;
   } else if (
-    btn === '+' ||
-    btn === '-' ||
-    btn === '/' ||
-    btn === 'x' ||
-    btn === '%'
+    btnName === '+' ||
+    btnName === '-' ||
+    btnName === '/' ||
+    btnName === 'x' ||
+    btnName === '%'
   ) {
-    operation = !next ? btn : null;
-  } else if (btn === '+/-') {
+    operation = !next ? btnName : null;
+  } else if (btnName === '+/-') {
     if (next) {
       next = next * (-1).toString();
     } else if (total) {
       total = total * (-1).toString();
     }
-  } else if (btn === '=') {
+  } else if (btnName === '=') {
     total = operate(total, next, operation);
     next = '';
     operation = null;
   } else if (!operation) {
-    total += btn;
+    total += btnName;
   } else {
-    next += btn;
+    next += btnName;
   }
   return { total, next, operation };
 };
