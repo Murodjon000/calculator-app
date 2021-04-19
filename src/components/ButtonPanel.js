@@ -12,7 +12,7 @@ const ButtonPanel = ({ handleClick }) => (
       <div className="top-btn">
         {topOps.map((op) => (
           <Button
-            btn={op}
+            btnName={op}
             handleClick={handleClick}
             className={'light-grey'}
             key={op}
@@ -21,7 +21,7 @@ const ButtonPanel = ({ handleClick }) => (
       </div>
       {nums.map((num) => (
         <Button
-          btn={num}
+          btnName={num}
           handleClick={handleClick}
           className={`dark-grey ${num === '0' && 'big-h'}`}
           key={num}
@@ -29,7 +29,7 @@ const ButtonPanel = ({ handleClick }) => (
       ))}
 
       <Button
-        btn={'.'}
+        btnName={'.'}
         handleClick={handleClick}
         className={'light-grey'}
         key={'.'}
@@ -38,7 +38,7 @@ const ButtonPanel = ({ handleClick }) => (
     <div className="ops-container">
       {ops.map((op) => (
         <Button
-          btn={op}
+          btnName={op}
           handleClick={handleClick}
           className={'orange'}
           key={op}
