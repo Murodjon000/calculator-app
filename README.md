@@ -2,6 +2,8 @@
 
 ![Weather App](./image.png)
 
+- This is React calculator app which was built fully using JavaScript and JSX.In this app, you can do your calculations very easily and fastly.
+
 ## Live Demo
 
 -[live-version](https://guarded-savannah-56728.herokuapp.com/)
