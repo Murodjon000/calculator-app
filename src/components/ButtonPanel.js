@@ -7,8 +7,8 @@ const ops = ['/', 'x', '-', '+', '='];
 const topOps = ['AC', '+/-', '%'];
 
 const ButtonPanel = ({ handleClick }) => (
-  <div className="calculator">
-    <div className="nums-container">
+  <div className="calculator " data-testid="button-panel">
+    <div className="nums-container ">
       <div className="top-btn">
         {topOps.map((op) => (
           <Button
