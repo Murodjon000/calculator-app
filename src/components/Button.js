@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = ({ btnName, handleClick, className }) => (
-  <button onClick={() => handleClick(btnName)} className={className}>
+  <button
+    onClick={() => handleClick(btnName)}
+    className={className}
+    data-testid="button"
+  >
     {btnName}
   </button>
 );
