@@ -23,6 +23,7 @@
 - Run `git pull origin app`
 - Run `yarn install` or `npm install` to install dependencies
 - On the terminal run `npm run start` open up the live server
+- To run tests write `npm run test` on the terminal
 
 ## Author
 
