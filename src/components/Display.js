@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Display = ({ total, next, operation }) => (
-  <div className="display">
+  <div className="display" data-testid="show-panel">
     {total || '0'}
     {operation ? operation : ''}
     {next}
